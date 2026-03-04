@@ -2,7 +2,7 @@
   "openapi" : "3.0.0",
   "info" : {
     "title" : "Simple Inventory API",
-    "description" : "This is a simple API",
+    "description" : "This is a simple API and created to provide technical BAs the clarity and knowledge on creating an API from the ground up. \r\n\r\n\r\nMore details - https://gamma.app/docs/All-about-APIs-for-technical-BAs-vyf039y4hplrca5",
     "contact" : {
       "email" : "you@your-company.com"
     },
@@ -83,6 +83,9 @@
             "description" : "bad input parameter"
           }
         },
+        "security" : [ {
+          "ApiKeyAuth" : [ ]
+        } ],
         "x-timeout" : {
           "description" : "Timeout for the search operation in seconds",
           "type" : "integer",
@@ -115,6 +118,9 @@
             "description" : "an existing item already exists"
           }
         },
+        "security" : [ {
+          "BearerAuth" : [ ]
+        } ],
         "x-timeout" : {
           "description" : "Timeout for the add operation in seconds",
           "type" : "integer",
@@ -126,6 +132,7 @@
       "get" : {
         "tags" : [ "developers" ],
         "summary" : "Retrieve customer information",
+        "description" : "Retrive customer information",
         "operationId" : "getCustomer",
         "responses" : {
           "200" : {
@@ -142,6 +149,9 @@
             "description" : "Customer not found"
           }
         },
+        "security" : [ {
+          "ApiKeyAuth" : [ ]
+        } ],
         "x-timeout" : {
           "description" : "Timeout for the get customer operation in seconds",
           "type" : "integer",
@@ -151,6 +161,7 @@
       "post" : {
         "tags" : [ "admins" ],
         "summary" : "Create a new customer",
+        "description" : "Create a new customer ",
         "operationId" : "createCustomer",
         "requestBody" : {
           "description" : "Customer to add",
@@ -171,6 +182,9 @@
             "description" : "Invalid input, object invalid"
           }
         },
+        "security" : [ {
+          "BearerAuth" : [ ]
+        } ],
         "x-timeout" : {
           "description" : "Timeout for the create customer operation in seconds",
           "type" : "integer",
@@ -250,6 +264,18 @@
             "example" : "123 Main St, Anytown, USA"
           }
         }
+      }
+    },
+    "securitySchemes" : {
+      "ApiKeyAuth" : {
+        "type" : "apiKey",
+        "name" : "X-API-Key",
+        "in" : "header"
+      },
+      "BearerAuth" : {
+        "type" : "http",
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT"
       }
     }
   }
