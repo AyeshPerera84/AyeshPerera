@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Ayes<div align="center">
+
 
 # Ayesh Perera
 
