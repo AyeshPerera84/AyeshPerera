@@ -1,4 +1,19 @@
-- 👋 Hi, I’m @AyeshPerera84
+- 👋 Hi, I’m @Ayes<div align="center">
+
+# Ayesh Perera
+
+### Senior Business Analyst · Product Owner · AI Product Builder
+
+I turn complex business problems into practical digital products,
+clear delivery roadmaps and useful AI-powered solutions.
+
+**Business Analysis** · **Product Strategy** · **AI Automation**
+
+[Veralu NZ](https://www.veralunz.com/)
+[LinkedIn](https://www.linkedin.com/in/ayeshperera/)
+[Email](mailto:pereraayesh7@gmail.com)
+
+</div>hPerera84
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning Python, data analysis and Machine learning
 - 💞️ I’m looking to collaborate on data projects
