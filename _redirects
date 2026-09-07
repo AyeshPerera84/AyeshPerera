@@ -1,0 +1,8 @@
+# Redirect www to apex
+https://www.ayeshperera.online/* https://ayeshperera.online/:splat 301
+
+# Redirect HTTP to HTTPS on apex
+http://ayeshperera.online/* https://ayeshperera.online/:splat 301
+
+# Redirect HTTP to HTTPS on www
+http://www.ayeshperera.online/* https://ayeshperera.online/:splat 301!
